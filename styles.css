@@ -1,28 +1,205 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: #000;
+}
+
 
 header {
-    background-color: red;
+    height: 200px;
+    background-color: #000;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-evenly;
 
     & .header__logo {
-        width: 18%;
-        height: 18%;
+        width: 10%;
     }
 
     & .header__title {
-        background-color: black;
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 500;
         color: white;
-        margin-top: 20px;
+        width: 30%;
+        height: 50px;
+        font-family: "Oswald", sans-serif;
+        font-size: 470%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Botones de Navegacion */
+
+nav {
+    height: 40px;
+    width: 10%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+
+    & .button__home {
+        font-size: 130%;
+        color: white;
+        text-decoration: none;
+        width: 30%;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin: 15px;
     }
 
-    & nav{
+    & .button__movies {
+        font-size: 130%;
+        color: white;
+        text-decoration: none;
+        width: 30%;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin: 15px;
+    }
+
+    & .button__comics {
+        font-size: 130%;
+        color: white;
+        text-decoration: none;
+        width: 30%;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+        margin: 15px;
+    }
+}
+
+/* Poner Transciciones */
+
+.button__home:hover {
+    font-size: 150%;
+}
+
+.button__movies:hover {
+    font-size: 150%;
+}
+
+.button__comics:hover {
+    font-size: 150%;
+}
+
+/* Main Content */
+
+main {
+    background-color: ##000;
+
+    & .main__container__video {
+        margin-top: 50px;
+        width: 100%;
+        background-color: #000;
+        display: grid;
+        grid-template-areas: 
+        "title video"
+        "info video";
+        gap: 10px;
+
+        & .container__video__title {
+            font-family: "Oswald", sans-serif;
+            color: white;
+            padding: 20px;
+            margin: 30px;
+            font-size: 3vw;
+            width: 70%;
+            height: 70px;
+            grid-area: title;
+        }
+
+        & .container__video {
+            width: 100%;
+            grid-area: video;
+        }
+
+        & .container__video__info {
+            font-family: "Oswald", sans-serif;
+            color: white;
+            margin-left: 50px;
+            text-decoration: none;
+            font-size: 160%;
+            padding: 15px;
+            grid-area: info;
+            margin-left: 80px;
+            border: 1px solid white;
+            border-radius: 50px;
+            width: 10%;
+            height: 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+/* Main Content Section 2 */
+
+.main__content {
+    margin-top: 50px;
+    margin: 20px;
+    color: white;
+    padding: 30px;
+
+    & .content__title {
+        font-size: 180%;
+        margin: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    & .content__paragraph {
+        margin: 20px;
+        font-size: 120%;
+    }
+}
+
+
+/* Content Movies */
+.content__container__movies {
+    border: 2px solid #c5bfbf91;
+    border-radius: 20px;
+    color: white;
+    height: 1300px;
+    background-color: grey;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 40px;
+
+    & .movies__title {
         background-color: blue;
+        font-size: 70px;
+        font-family: "Oswald", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Movie Images */
+
+.movies__images {
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(500px, 1fr));
+    grid-template-rows:  repeat(2,minmax(500px, 1fr));
+
+    /* THE DARK KNIGTH */
+    & .movies__batman-the-dark-knigth {
+        background-color: red;
+        width: ;
     }
 }
